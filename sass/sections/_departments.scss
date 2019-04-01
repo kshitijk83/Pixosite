@@ -66,25 +66,25 @@
 .dept_logo1 {
 	top: 30%;
 	right: 20%;
-	animation: dep_logo_anime 7s linear;
+	// animation: dep_logo_anime 7s linear;
 }
 
 .dept_logo2 {
 	top: 30%;
 	left: 20%;
-	animation: dep_logo_anime 7s linear 7s;
+	// animation: dep_logo_anime 7s linear 7s;
 }
 
 .dept_logo3 {
 	top: 30%;
 	right: 20%;
-	animation: dep_logo_anime 7s linear 14s;
+	// animation: dep_logo_anime 7s linear 14s;
 }
 
 .dept_logo4 {
 	top: 30%;
 	left: 20%;
-	animation: dep_logo_anime 7s linear 21s;
+	// animation: dep_logo_anime 7s linear 21s;
 }
 
 @keyframes dep_logo_anime {
@@ -95,12 +95,12 @@
 
 	5% {
 		opacity: 1;
-		height: 40%;
+		height: auto;
 	}
 
 	90% {
 		opacity: 1;
-		height: 40%;
+		height: auto;
 	}
 
 	100% {
@@ -112,22 +112,27 @@
 	height: 130%;
 	width: 120%;
 	opacity: 0.9;
+
+	@include respond(phone){
+		width: 4rem;
+		height: 4rem;
+	}
 }
 
 .dept_logo_img1 {
-	animation: img_zoom 7s linear;
+	// animation: img_zoom 7s linear;
 }
 
 .dept_logo_img2 {
-	animation: img_zoom 7s linear 5s;
+	// animation: img_zoom 7s linear 5s;
 }
 
 .dept_logo_img3 {
-	animation: img_zoom 7s linear 5s;
+	// animation: img_zoom 7s linear 5s;
 }
 
 .dept_logo_img4 {
-	animation: img_zoom 7s linear 5s;
+	// animation: img_zoom 7s linear 5s;
 }
 
 @keyframes img_zoom {
@@ -136,7 +141,7 @@
 	}
 
 	100% {
-		transform: scale(1.6) translate(-4rem,-2rem);
+		transform: scale(1.6) translate(-50%, -50%);
 	}
 }
 
