@@ -23,12 +23,11 @@ $breakpoint arguments choices
 .main_img {
   opacity: 0;
   position: absolute;
-  width: 10%; }
+  width: 10rem; }
 
 .main_img1 {
   top: 67%;
   left: 73%;
-  width: 8%;
   animation: img_pop1 1s ease-out 5s;
   animation-fill-mode: forwards; }
 
@@ -43,7 +42,6 @@ $breakpoint arguments choices
 .main_img2 {
   top: -11%;
   left: 40%;
-  width: 12%;
   animation: img_pop2 1s ease-out 5s;
   animation-fill-mode: forwards; }
 
@@ -58,7 +56,6 @@ $breakpoint arguments choices
 .main_img3 {
   top: 42%;
   left: 73%;
-  width: 15%;
   animation: img_pop3 1s ease-out 5s;
   animation-fill-mode: forwards; }
 
@@ -73,7 +70,6 @@ $breakpoint arguments choices
 .main_img4 {
   top: 22%;
   left: 75%;
-  width: 12%;
   animation: img_pop4 1s ease-out 5s;
   animation-fill-mode: forwards; }
 
@@ -88,7 +84,6 @@ $breakpoint arguments choices
 .main_img5 {
   top: 6%;
   left: 53%;
-  width: 16%;
   animation: img_pop5 1s ease-out 5s;
   animation-fill-mode: forwards; }
 
@@ -103,7 +98,6 @@ $breakpoint arguments choices
 .main_img6 {
   top: 83%;
   left: 58%;
-  width: 15%;
   animation: img_pop6 1s ease-out 5s;
   animation-fill-mode: forwards; }
 
@@ -116,7 +110,6 @@ $breakpoint arguments choices
     left: 48%; } }
 
 .main_img7 {
-  width: 6%;
   top: 92%;
   left: 36%;
   animation: img_pop7 1s ease-out 5s;
@@ -133,7 +126,6 @@ $breakpoint arguments choices
 .main_img8 {
   top: 16%;
   left: 22%;
-  width: 12%;
   animation: img_pop8 1s ease-out 5s;
   animation-fill-mode: forwards; }
 
@@ -147,7 +139,6 @@ $breakpoint arguments choices
 
 .main_img9 {
   transform: rotate(180deg);
-  width: 7%;
   top: 9%;
   left: 75%;
   animation: img_pop9 1s ease-out 5s;
@@ -164,7 +155,6 @@ $breakpoint arguments choices
 .main_img10 {
   top: 88%;
   left: 44%;
-  width: 5%;
   transform: rotate(-10deg);
   animation: img_pop10 1s ease-out 5s;
   animation-fill-mode: forwards; }
@@ -178,7 +168,6 @@ $breakpoint arguments choices
     left: 49%; } }
 
 .main_img11 {
-  width: 4%;
   top: 52%;
   left: 22%;
   animation: img_pop11 1s ease-out 5s;
@@ -193,7 +182,6 @@ $breakpoint arguments choices
     left: 37%; } }
 
 .main_img12 {
-  width: 9%;
   top: 55%;
   left: 25%;
   animation: img_pop12 1s ease-out 5s;
@@ -208,7 +196,6 @@ $breakpoint arguments choices
     left: 41%; } }
 
 .main_img13 {
-  width: 4%;
   transform: rotate(-10deg);
   top: 46%;
   left: 79%;
@@ -226,7 +213,6 @@ $breakpoint arguments choices
 .main_img14 {
   top: 81%;
   left: 37%;
-  width: 8%;
   animation: img_pop14 1s ease-out 5s;
   animation-fill-mode: forwards; }
 
@@ -241,7 +227,6 @@ $breakpoint arguments choices
 .main_img15 {
   top: 50%;
   left: 69%;
-  width: 7%;
   animation: img_pop15 1s ease-out 5s;
   animation-fill-mode: forwards; }
 
@@ -253,13 +238,27 @@ $breakpoint arguments choices
     top: 50%;
     left: 49%; } }
 
-.main_text p:nth-child(1) {
+.main_text {
+  bottom: 7rem;
+  display: flex;
+  justify-content: center;
   position: absolute;
+  width: 100%; }
+
+.main_text p {
+  position: absolute;
+  display: inline-block; }
+
+.main_text div {
+  position: relative;
+  display: inline-block;
+  width: 1rem;
+  margin-left: 10rem; }
+
+.main_text p:nth-child(1) {
   font-family: sans-serif;
   letter-spacing: 0.5rem;
   font-size: 1.5rem;
-  top: 85%;
-  left: 35%;
   color: white;
   opacity: 0;
   animation: appear 0.5s linear 6.5s;
@@ -272,14 +271,14 @@ $breakpoint arguments choices
     opacity: 0.4;
     transform: translateX(-3rem); } }
 
-.main_text p:nth-child(2) {
+.main_text div p:nth-child(1) {
   font-size: 1.5rem;
   font-family: sans-serif;
   letter-spacing: 0.5rem;
   opacity: 0;
   position: absolute;
   top: 85%;
-  left: 55%;
+  left: 54%;
   color: white;
   animation: type1 1.5s steps(7) 8s;
   overflow: hidden;
@@ -293,14 +292,14 @@ $breakpoint arguments choices
     opacity: 0.4;
     width: 14ch; } }
 
-.main_text p:nth-child(3) {
+.main_text div p:nth-child(2) {
   font-size: 1.5rem;
   font-family: sans-serif;
   letter-spacing: 0.5rem;
   opacity: 0;
   position: absolute;
   top: 85%;
-  left: 55%;
+  left: 54%;
   color: white;
   animation: type2 2s steps(11) 10s;
   overflow: hidden;
@@ -314,14 +313,14 @@ $breakpoint arguments choices
     opacity: 0.4;
     width: 16ch; } }
 
-.main_text p:nth-child(4) {
+.main_text div p:nth-child(3) {
   font-size: 1.5rem;
   font-family: sans-serif;
   letter-spacing: 0.5rem;
   opacity: 0;
   position: absolute;
   top: 85%;
-  left: 55%;
+  left: 54%;
   color: white;
   animation: type3 1s steps(4) 12.5s;
   animation-fill-mode: forwards;
@@ -358,7 +357,8 @@ $breakpoint arguments choices
   margin: 0rem;
   border: 0.2rem solid #fff;
   border-radius: 50%;
-  animation: lds_ring 7s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  animation: lds_ring 7s cubic-bezier(0.5, 0, 0.5, 1);
+  animation-iteration-count: 4;
   border-color: #fff transparent transparent transparent; }
 
 .lds_ring div:nth-child(1) {
@@ -391,23 +391,32 @@ $breakpoint arguments choices
 
 .dept_logo1 {
   top: 30%;
-  right: 20%;
-  animation: dep_logo_anime 7s linear; }
+  right: 20%; }
 
 .dept_logo2 {
   top: 30%;
-  left: 20%;
-  animation: dep_logo_anime 7s linear 7s; }
+  left: 20%; }
 
 .dept_logo3 {
   top: 30%;
-  right: 20%;
-  animation: dep_logo_anime 7s linear 14s; }
+  right: 20%; }
 
 .dept_logo4 {
   top: 30%;
   left: 20%;
-  animation: dep_logo_anime 7s linear 21s; }
+  animation: dep_logo_anime4 7s linear 21s;
+  animation-fill-mode: forwards; }
+
+@keyframes dep_logo_anime4 {
+  0% {
+    opacity: 1;
+    height: 0%; }
+  5% {
+    opacity: 1;
+    height: 40%; }
+  100% {
+    opacity: 1;
+    height: 40%; } }
 
 @keyframes dep_logo_anime {
   0% {
@@ -415,35 +424,27 @@ $breakpoint arguments choices
     height: 0%; }
   5% {
     opacity: 1;
-    height: 40%; }
+    height: auto; }
   90% {
     opacity: 1;
-    height: 40%; }
+    height: auto; }
   100% {
     height: 0%; } }
 
 .dept_logo_img {
-  height: 130%;
-  width: 120%;
+  height: 16rem;
+  width: 16rem;
   opacity: 0.9; }
-
-.dept_logo_img1 {
-  animation: img_zoom 7s linear; }
-
-.dept_logo_img2 {
-  animation: img_zoom 7s linear 5s; }
-
-.dept_logo_img3 {
-  animation: img_zoom 7s linear 5s; }
-
-.dept_logo_img4 {
-  animation: img_zoom 7s linear 5s; }
+  @media only screen and (max-width: 37.5em) {
+    .dept_logo_img {
+      width: 4rem;
+      height: 4rem; } }
 
 @keyframes img_zoom {
   0% {
     transform: scale(1); }
   100% {
-    transform: scale(1.6) translate(-4rem, -2rem); } }
+    transform: scale(1.6) translate(-50%, -50%); } }
 
 .dept_desc {
   position: absolute;
@@ -472,7 +473,19 @@ $breakpoint arguments choices
 .dept_desc4 {
   top: 0%;
   right: 0%;
-  animation: dep_desc_anime 7s linear 21.5s; }
+  animation: dep_desc_anime4 7s linear 21.5s;
+  animation-fill-mode: forwards; }
+
+@keyframes dep_desc_anime4 {
+  0% {
+    opacity: 1;
+    width: 0%; }
+  10% {
+    opacity: 1;
+    width: 70%; }
+  100% {
+    opacity: 1;
+    width: 70%; } }
 
 @keyframes dep_desc_anime {
   0% {
@@ -488,8 +501,8 @@ $breakpoint arguments choices
     width: 0%; } }
 
 .dept_desc_img {
-  height: 100%;
-  width: 100%; }
+  height: 35rem;
+  width: 50rem; }
 
 .dept_desc_img1 {
   animation: img_zoom 7s linear; }
@@ -539,7 +552,18 @@ $breakpoint arguments choices
 .description4 {
   top: 40%;
   right: 23%;
-  animation: text_appear 5s ease-in 22s; }
+  animation: text_appear4 5s ease-in 22s;
+  animation-fill-mode: forwards; }
+
+@keyframes text_appear4 {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 0.8;
+    transform: translate(0rem, -3rem); }
+  100% {
+    opacity: 0.8;
+    transform: translate(0rem, -7rem); } }
 
 @keyframes text_appear {
   0% {
@@ -567,9 +591,15 @@ body {
 .in_main {
   display: block;
   position: absolute;
-  margin: 20% 0% 0% 34%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   animation: shrink 0.7s linear 4s forwards;
-  z-index: 10000; }
+  z-index: 10000;
+  font-size: 1rem; }
+  @media only screen and (max-width: 37.5em) {
+    .in_main {
+      left: 66%; } }
 
 .wrapper {
   display: flex;
@@ -578,7 +608,7 @@ body {
   justify-content: center; }
 
 .in_main img {
-  width: 6rem;
+  width: 3rem;
   animation: logo_anime 3s forwards; }
 
 @keyframes logo_anime {
@@ -597,7 +627,7 @@ body {
 .in_main span {
   color: #eeeeee;
   opacity: 0;
-  font-size: 3rem;
+  font-size: 1rem;
   letter-spacing: 1rem;
   font-family: sans-serif;
   animation: heading_anime 1s linear 2s forwards; }
@@ -611,10 +641,11 @@ body {
 
 @keyframes shrink {
   0% {
-    transform: scale(1); }
+    transform: translate(-50%, -50%) scale(1); }
   100% {
-    transform-origin: left;
-    transform: translate(-68%, -210%) scale(0.3); } }
+    top: 1rem;
+    left: -3rem;
+    transform: scale(0.4); } }
 
 .gallery {
   height: 100vh;
@@ -652,9 +683,8 @@ body {
 
 .gallery_flow {
   z-index: 200;
-  top: 0%;
-  left: 0%;
-  overflow: hidden; }
+  display: flex;
+  height: 50vh; }
 
 .gallery_div {
   background-color: transparent;
@@ -664,28 +694,42 @@ body {
   position: relative; }
 
 .gallery_div img {
-  height: 50%;
   width: 100%; }
 
 .gallery_div1 {
   animation: gallery_move1 30s linear infinite;
   top: -72rem; }
+  @media only screen and (max-width: 37.5em) {
+    .gallery_div1 {
+      top: -23rem; } }
 
 .gallery_div2 {
   animation: gallery_move2 30s linear infinite;
   top: 30rem; }
+  @media only screen and (max-width: 37.5em) {
+    .gallery_div2 {
+      top: 50rem; } }
 
 .gallery_div3 {
   animation: gallery_move1 30s linear infinite;
   top: -72rem; }
+  @media only screen and (max-width: 37.5em) {
+    .gallery_div3 {
+      top: -23rem; } }
 
 .gallery_div4 {
   animation: gallery_move2 30s linear infinite;
   top: 30rem; }
+  @media only screen and (max-width: 37.5em) {
+    .gallery_div4 {
+      top: 50rem; } }
 
 .gallery_div5 {
   animation: gallery_move1 30s linear infinite;
   top: -72rem; }
+  @media only screen and (max-width: 37.5em) {
+    .gallery_div5 {
+      top: -23rem; } }
 
 @keyframes gallery_move1 {
   0% {

@@ -41,9 +41,8 @@
 
 .gallery_flow {
 	z-index: 200;
-	top: 0%;
-	left: 0%;
-	overflow: hidden;
+	display: flex;
+	height: 50vh;
 }
 
 .gallery_div {
@@ -55,33 +54,49 @@
 }
 
 .gallery_div img {
-	height: 50%;
+	// height: 50%;
 	width: 100%;
 }
 
 .gallery_div1 {
 	animation: gallery_move1 30s linear infinite;
 	top: -72rem;
+
+	@include respond(phone){
+		top: -23rem;
+	}
 }
 
 .gallery_div2 {
 	animation: gallery_move2 30s linear infinite;
 	top: 30rem;
+	@include respond(phone){
+		top: 50rem;
+	}
 }
 
 .gallery_div3 {
 	animation: gallery_move1 30s linear infinite;
 	top: -72rem;
+	@include respond(phone){
+		top: -23rem;
+	}
 }
 
 .gallery_div4 {
 	animation: gallery_move2 30s linear infinite;
 	top: 30rem;
+	@include respond(phone){
+		top: 50rem;
+	}
 }
 
 .gallery_div5 {
 	animation: gallery_move1 30s linear infinite;
 	top: -72rem;
+	@include respond(phone){
+		top: -23rem;
+	}
 }
 
 @keyframes gallery_move1 {
